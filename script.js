@@ -90,7 +90,7 @@ async function sendMessage(e) {
     const data = {
       name: document.getElementById('fname').value,
       email: document.getElementById('femail').value,
-      subject: document.getElementById('fsubject').value,
+      _subject: document.getElementById('fsubject').value || 'New message from your Portfolio!',
       message: document.getElementById('fmessage').value,
     };
 
