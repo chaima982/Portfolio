@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaima Ben Hawala – Cybersecurity Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Chaima Ben Hawala, Cybersecurity Engineering Student specializing in network security, intrusion detection, and secure systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="bg-wrapper">
+    <div class="bg-orb orb1"></div>
+    <div class="bg-orb orb2"></div>
+    <div class="bg-orb orb3"></div>
+  </div>
+
+  <!-- Main Book Container -->
+  <div class="scene">
+    <div class="book" id="book">
+
+      <!-- ══════════════════════════════════════
+           COVER / PAGE 1 – About Me
+      ══════════════════════════════════════ -->
+      <div class="page" id="page1">
+        <!-- LEFT PANEL (sidebar) -->
+        <div class="page-left sidebar">
+          <div class="sidebar-top">
+            <div class="avatar-ring">
+              <img src="profile.jpg" alt="Chaima Ben Hawala" class="avatar-img" />
+            </div>
+            <h1 class="sidebar-name">Chaima Ben Hawala</h1>
+            <p class="sidebar-title">Cybersecurity Engineering Student</p>
+
+            <div class="social-links">
+              <a href="mailto:chaimaawala@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+              <a href="https://linkedin.com/in/chaima-ben-hawala-728373224" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/chaima982" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="tel:+21625448743" title="Phone"><i class="fas fa-phone"></i></a>
+            </div>
+
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> Jemmel, Monastir, Tunisia</p>
+              <p><i class="fas fa-envelope"></i> chaimaawala@gmail.com</p>
+              <p><i class="fas fa-phone"></i> +216 25 448 743</p>
+              <p><i class="fab fa-github"></i> github.com/chaima982</p>
+            </div>
+          </div>
+
+          <div class="sidebar-bottom">
+            <a href="#" class="btn-primary" onclick="downloadCV()"><i class="fas fa-download"></i> Download CV</a>
+            <a href="#" class="btn-outline" onclick="goToPage(6)"><i class="fas fa-paper-plane"></i> Contact Me</a>
+          </div>
+        </div>
+
+        <!-- RIGHT PANEL – About -->
+        <div class="page-right">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+
+          <div class="about-text">
+            <div class="shield-icon"><i class="fas fa-shield-alt"></i></div>
+            <p>
+              Cybersecurity Engineering student with strong organizational skills and a deep interest in 
+              <strong>network security</strong>, <strong>threat detection</strong>, and <strong>secure systems</strong>. 
+              Skilled in teamwork, communication, and problem-solving. Currently pursuing an engineering degree 
+              in cybersecurity at <strong>EPI Digital School</strong>, with hands-on experience in security 
+              projects and intrusion detection systems.
+            </p>
+          </div>
+
+          <h3 class="sub-title"><i class="fas fa-certificate"></i> Certifications Highlights</h3>
+          <div class="cert-grid">
+            <div class="cert-badge"><i class="fab fa-aws"></i><span>AWS Cloud Foundations</span></div>
+            <div class="cert-badge"><i class="fas fa-network-wired"></i><span>CCNA (3 Modules)</span></div>
+            <div class="cert-badge"><i class="fas fa-user-secret"></i><span>Ethical Hacker – Cisco</span></div>
+            <div class="cert-badge"><i class="fab fa-microsoft"></i><span>Azure Fundamentals</span></div>
+            <div class="cert-badge"><i class="fas fa-brain"></i><span>Deep Learning</span></div>
+            <div class="cert-badge"><i class="fas fa-robot"></i><span>AI Anomaly Detection</span></div>
+          </div>
+
+          <h3 class="sub-title"><i class="fas fa-language"></i> Languages</h3>
+          <div class="lang-bars">
+            <div class="lang-item">
+              <span class="lang-name">Arabic</span>
+              <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+              <span class="lang-level">Native</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">English</span>
+              <div class="lang-bar"><div class="lang-fill" style="width:85%"></div></div>
+              <span class="lang-level">Professional</span>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">French</span>
+              <div class="lang-bar"><div class="lang-fill" style="width:75%"></div></div>
+              <span class="lang-level">Intermediate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page Number -->
+        <div class="page-num left-num">1</div>
+        <div class="page-nav right-arrow" onclick="nextPage()"><i class="fas fa-chevron-right"></i></div>
+      </div>
+
+      <!-- ══════════════════════════════════════
+           PAGE 2 – Work Experience
+      ══════════════════════════════════════ -->
+      <div class="page hidden" id="page2">
+        <div class="page-left">
+          <h2 class="section-title">Work Experience</h2>
+          <div class="section-divider"></div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">07/2025 – 09/2025</div>
+              <div class="tl-content">
+                <h4>Web Development Intern</h4>
+                <p class="tl-company"><i class="fas fa-building"></i> 5DS, Paris</p>
+                <p class="tl-project">ComptaHub Platform</p>
+                <p>Development of the ComptaHub platform – Digital accounting management solution using <span class="tag">MERN</span></p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">02/2024 – 05/2024</div>
+              <div class="tl-content">
+                <h4>Web Development Intern – End-of-Study Project</h4>
+                <p class="tl-company"><i class="fas fa-building"></i> Flesk, Monastir</p>
+                <p class="tl-project">Car Sales App with AI</p>
+                <p>Progressive Web App (PWA) for car sales with AI features for enhanced UX.</p>
+                <div class="tech-tags">
+                  <span class="tag">Angular</span><span class="tag">Node.js</span><span class="tag">Flask</span><span class="tag">Python</span><span class="tag">OpenCV</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">07/2023 – 09/2023</div>
+              <div class="tl-content">
+                <h4>Web Development Intern</h4>
+                <p class="tl-company"><i class="fas fa-building"></i> SwiftCode, Sfax</p>
+                <p class="tl-project">E-commerce – Accessories Store</p>
+                <div class="tech-tags">
+                  <span class="tag">React.js</span><span class="tag">Node.js</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">06/2023 – 07/2023</div>
+              <div class="tl-content">
+                <h4>Web Development Intern</h4>
+                <p class="tl-company"><i class="fas fa-building"></i> ItGate Group, Hammamet Sousse</p>
+                <p class="tl-project">E-commerce – Clothing Shop</p>
+                <div class="tech-tags">
+                  <span class="tag">React.js</span><span class="tag">Node.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-right">
+          <h2 class="section-title">Education</h2>
+          <div class="section-divider"></div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">09/2024 – Present</div>
+              <div class="tl-content">
+                <h4>Cybersecurity Engineering (In Progress)</h4>
+                <p class="tl-company"><i class="fas fa-university"></i> EPI Digital School, Sousse</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">09/2024 – Present</div>
+              <div class="tl-content">
+                <h4>Master's Degree in Research (In Progress)</h4>
+                <p class="tl-company"><i class="fas fa-university"></i> Institut of Computer Science and Mathematics, Monastir</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">09/2021 – 06/2024</div>
+              <div class="tl-content">
+                <h4>Bachelor's Degree in Software Engineering</h4>
+                <p class="tl-company"><i class="fas fa-university"></i> Institut of Computer Science and Mathematics, Monastir</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">09/2018 – 06/2021</div>
+              <div class="tl-content">
+                <h4>Bachelor's Degree in Experimental Sciences</h4>
+                <p class="tl-company"><i class="fas fa-school"></i> Jemmel High School</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-nav left-arrow" onclick="prevPage()"><i class="fas fa-chevron-left"></i></div>
+        <div class="page-num center-num">2</div>
+        <div class="page-nav right-arrow" onclick="nextPage()"><i class="fas fa-chevron-right"></i></div>
+      </div>
+
+      <!-- ══════════════════════════════════════
+           PAGE 3 – Projects
+      ══════════════════════════════════════ -->
+      <div class="page hidden" id="page3">
+        <div class="page-left">
+          <h2 class="section-title">Cybersecurity Projects</h2>
+          <div class="section-divider"></div>
+
+          <div class="project-card featured">
+            <div class="project-icon"><i class="fas fa-shield-virus"></i></div>
+            <div class="project-info">
+              <h4>CyberDefender – Network IDS Platform</h4>
+              <p class="proj-date"><i class="fas fa-calendar"></i> 01/2026 – 05/2026</p>
+              <p>Web-based platform for multi-type network attack detection using the <strong>UNSW-NB15</strong> dataset. Focuses on attack classification and evaluation of intrusion detection solutions.</p>
+              <div class="tech-tags">
+                <span class="tag">MERN</span><span class="tag">Flask</span><span class="tag">Python</span><span class="tag">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-fire-alt"></i></div>
+            <div class="project-info">
+              <h4>Firewall Security Configuration & Testing</h4>
+              <p class="proj-date"><i class="fas fa-calendar"></i> 11/2025 – 12/2025</p>
+              <ul class="proj-bullets">
+                <li>Configured pfSense security rules in a virtualized environment</li>
+                <li>Tested VPN setup, SSH access restrictions, and web filtering</li>
+                <li>Applied network security filtering fundamentals</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-skull-crossbones"></i></div>
+            <div class="project-info">
+              <h4>Ransomware Behavior Analysis & Detection</h4>
+              <p class="proj-date"><i class="fas fa-calendar"></i> 11/2025 – 01/2026</p>
+              <ul class="proj-bullets">
+                <li>Dynamic analysis in isolated sandbox environment</li>
+                <li>Network traffic analysis with Wireshark for C2 detection</li>
+                <li>Python-based early threat detection mechanism</li>
+                <li>Mitigation strategy proposals</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tag">Python</span><span class="tag">Wireshark</span><span class="tag">Sandbox</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-right">
+          <h2 class="section-title">Full Certificates</h2>
+          <div class="section-divider"></div>
+
+          <div class="cert-list">
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fab fa-aws"></i></div>
+              <div>
+                <strong>AWS Academy Graduate: Cloud Foundations</strong>
+                <p>Amazon Web Services · 2025</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+              <div>
+                <strong>CCNA: Introduction to Networks</strong>
+                <p>Cisco · 2025</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+              <div>
+                <strong>CCNA: Switching, Routing & Wireless Essentials</strong>
+                <p>Cisco · 2025</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+              <div>
+                <strong>CCNA: Enterprise Networking, Security & Automation</strong>
+                <p>Cisco · 2025</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-user-secret"></i></div>
+              <div>
+                <strong>Ethical Hacker</strong>
+                <p>Cisco Networking Academy · 2025</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+              <div>
+                <strong>Microsoft Certified: Azure Fundamentals (AZ-900)</strong>
+                <p>Microsoft · 2025</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-brain"></i></div>
+              <div>
+                <strong>Fundamentals of Deep Learning</strong>
+                <p>Certificate of Competency · 2025</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-icon"><i class="fas fa-robot"></i></div>
+              <div>
+                <strong>Applications of AI for Anomaly Detection</strong>
+                <p>Certificate of Competency · 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-nav left-arrow" onclick="prevPage()"><i class="fas fa-chevron-left"></i></div>
+        <div class="page-num center-num">3</div>
+        <div class="page-nav right-arrow" onclick="nextPage()"><i class="fas fa-chevron-right"></i></div>
+      </div>
+
+      <!-- ══════════════════════════════════════
+           PAGE 4 – Skills
+      ══════════════════════════════════════ -->
+      <div class="page hidden" id="page4">
+        <div class="page-left">
+          <h2 class="section-title">My Skills</h2>
+          <div class="section-divider"></div>
+
+          <div class="skill-section">
+            <h3 class="skill-cat"><i class="fas fa-code"></i> Web & Development</h3>
+            <div class="skill-icons">
+              <div class="skill-badge"><i class="fab fa-react"></i><span>React</span></div>
+              <div class="skill-badge"><i class="fab fa-angular"></i><span>Angular</span></div>
+              <div class="skill-badge"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+              <div class="skill-badge"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+              <div class="skill-badge"><i class="fab fa-html5"></i><span>HTML5</span></div>
+              <div class="skill-badge"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+              <div class="skill-badge"><i class="fas fa-database"></i><span>MongoDB</span></div>
+              <div class="skill-badge"><i class="fas fa-server"></i><span>PHP/SQL</span></div>
+            </div>
+          </div>
+
+          <div class="skill-section">
+            <h3 class="skill-cat"><i class="fas fa-cogs"></i> DevOps & Tools</h3>
+            <div class="skill-icons">
+              <div class="skill-badge"><i class="fab fa-docker"></i><span>Docker</span></div>
+              <div class="skill-badge"><i class="fab fa-github"></i><span>GitHub</span></div>
+              <div class="skill-badge"><i class="fab fa-gitlab"></i><span>GitLab</span></div>
+              <div class="skill-badge"><i class="fas fa-chart-line"></i><span>Grafana</span></div>
+              <div class="skill-badge"><i class="fas fa-search"></i><span>SonarQube</span></div>
+            </div>
+          </div>
+
+          <div class="skill-section">
+            <h3 class="skill-cat"><i class="fas fa-terminal"></i> Programming & Scripting</h3>
+            <div class="skill-icons">
+              <div class="skill-badge"><i class="fab fa-python"></i><span>Python</span></div>
+              <div class="skill-badge"><i class="fab fa-java"></i><span>Java</span></div>
+              <div class="skill-badge"><i class="fas fa-code"></i><span>C</span></div>
+              <div class="skill-badge"><i class="fas fa-terminal"></i><span>Bash</span></div>
+              <div class="skill-badge"><i class="fab fa-windows"></i><span>PowerShell</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-right">
+          <h2 class="section-title">Cybersecurity Skills</h2>
+          <div class="section-divider"></div>
+
+          <div class="cyber-skill-card">
+            <div class="cs-icon"><i class="fas fa-network-wired"></i></div>
+            <div class="cs-content">
+              <h4>Network Security</h4>
+              <p>TCP/IP, VPN, Firewalls, IDS/IPS, pfSense</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            </div>
+          </div>
+
+          <div class="cyber-skill-card">
+            <div class="cs-icon"><i class="fas fa-bug"></i></div>
+            <div class="cs-content">
+              <h4>Application Security</h4>
+              <p>OWASP Top 10, Penetration Testing, System Hardening</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            </div>
+          </div>
+
+          <div class="cyber-skill-card">
+            <div class="cs-icon"><i class="fas fa-cloud"></i></div>
+            <div class="cs-content">
+              <h4>Cloud Security</h4>
+              <p>AWS / Azure / GCP, IAM, Access Management</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            </div>
+          </div>
+
+          <div class="cyber-skill-card">
+            <div class="cs-icon"><i class="fas fa-search"></i></div>
+            <div class="cs-content">
+              <h4>Forensics & Automation</h4>
+              <p>Incident Response Scripting, Wireshark, Sandbox Analysis</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+            </div>
+          </div>
+
+          <div class="cyber-skill-card">
+            <div class="cs-icon"><i class="fas fa-brain"></i></div>
+            <div class="cs-content">
+              <h4>AI / ML for Security</h4>
+              <p>Anomaly Detection, Deep Learning, IDS with ML</p>
+              <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-nav left-arrow" onclick="prevPage()"><i class="fas fa-chevron-left"></i></div>
+        <div class="page-num center-num">4</div>
+        <div class="page-nav right-arrow" onclick="nextPage()"><i class="fas fa-chevron-right"></i></div>
+      </div>
+
+      <!-- ══════════════════════════════════════
+           PAGE 5 – Contact
+      ══════════════════════════════════════ -->
+      <div class="page hidden" id="page5">
+        <div class="page-left contact-page">
+          <h2 class="section-title">Contact Me!</h2>
+          <div class="section-divider"></div>
+
+          <div class="contact-details">
+            <div class="contact-row">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">chaimaawala@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <p class="contact-label">Phone</p>
+                <p class="contact-value">+216 25 448 743</p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <p class="contact-label">Location</p>
+                <p class="contact-value">Jemmel, Monastir, Tunisia</p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <p class="contact-label">LinkedIn</p>
+                <p class="contact-value">chaima-ben-hawala-728373224</p>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <p class="contact-value">github.com/chaima982</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-right contact-form-page">
+          <h2 class="section-title">Send a Message</h2>
+          <div class="section-divider"></div>
+
+          <form class="contact-form" onsubmit="sendMessage(event)">
+            <div class="form-group">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Your Email</label>
+              <input type="email" id="femail" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Your Message</label>
+              <textarea id="fmessage" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-success" class="form-success hidden">
+              <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+
+          <div class="back-home">
+            <button class="btn-outline" onclick="goToPage(1)"><i class="fas fa-home"></i> Back to Home</button>
+          </div>
+        </div>
+
+        <div class="page-nav left-arrow" onclick="prevPage()"><i class="fas fa-chevron-left"></i></div>
+        <div class="page-num center-num" style="right: 20px; left: auto;">5</div>
+        <div class="home-btn" onclick="goToPage(1)"><i class="fas fa-user"></i></div>
+      </div>
+
+    </div><!-- /book -->
+
+    <!-- Page indicator dots -->
+    <div class="page-dots">
+      <span class="dot active" onclick="goToPage(1)"></span>
+      <span class="dot" onclick="goToPage(2)"></span>
+      <span class="dot" onclick="goToPage(3)"></span>
+      <span class="dot" onclick="goToPage(4)"></span>
+      <span class="dot" onclick="goToPage(5)"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
