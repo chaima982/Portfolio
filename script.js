@@ -66,22 +66,56 @@ document.querySelector('.book').addEventListener('touchend', (e) => {
   }
 }, { passive: true });
 
-// Contact form handler
-function sendMessage(e) {
+// Contact form handler – sends via Formspree to chaimawala@gmail.com
+// IMPORTANT: Replace "YOUR_FORM_ID" below with your Formspree form ID
+//            after creating your form at https://formspree.io
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+
+async function sendMessage(e) {
   e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
+  const form = e.target;
+  const btn = document.getElementById('submit-btn');
+  const successEl = document.getElementById('form-success');
+  const errorEl = document.getElementById('form-error');
+
+  // Reset previous messages
+  successEl.classList.add('hidden');
+  errorEl.classList.add('hidden');
+
+  // Show loading state
   btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
   btn.disabled = true;
 
-  setTimeout(() => {
+  try {
+    const data = {
+      name: document.getElementById('fname').value,
+      email: document.getElementById('femail').value,
+      subject: document.getElementById('fsubject').value,
+      message: document.getElementById('fmessage').value,
+    };
+
+    const response = await fetch(FORMSPREE_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      // Success
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      btn.disabled = false;
+      successEl.classList.remove('hidden');
+      form.reset();
+      setTimeout(() => successEl.classList.add('hidden'), 5000);
+    } else {
+      throw new Error('Server error');
+    }
+  } catch (err) {
     btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
     btn.disabled = false;
-    document.getElementById('form-success').classList.remove('hidden');
-    e.target.reset();
-    setTimeout(() => {
-      document.getElementById('form-success').classList.add('hidden');
-    }, 4000);
-  }, 1500);
+    errorEl.classList.remove('hidden');
+    setTimeout(() => errorEl.classList.add('hidden'), 5000);
+  }
 }
 
 // Download CV
