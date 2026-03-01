@@ -69,7 +69,7 @@ document.querySelector('.book').addEventListener('touchend', (e) => {
 // Contact form handler – sends via Formspree to chaimawala@gmail.com
 // IMPORTANT: Replace "YOUR_FORM_ID" below with your Formspree form ID
 //            after creating your form at https://formspree.io
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mykdawyo';
 
 async function sendMessage(e) {
   e.preventDefault();
